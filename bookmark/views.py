@@ -10,6 +10,6 @@ class BookmarkList(ListView):   # bookmark_list.html
 
 class BookmarkCreateView(CreateView):   #bookmark_form.html
     model = Bookmark
-    fields = ['site_name', 'url']
+    fields = ['site_name', 'url']       #<from>태그가 들어가는 곳에 넣어줌
     template_name_suffix = '_create'    #bookmark_create.html
     success_url = reverse_lazy('bookmark:list')
