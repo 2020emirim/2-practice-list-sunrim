@@ -7,7 +7,7 @@
 <body>
 <form action="" method="post">
     {% csrf_token %}
-    {{ form.as_p }} #views에 fields에 넣어놨던 항목들이 자동으로 input됨
+    {{ form.as_p }} <!--views에 fields에 넣어놨던 항목들이 자동으로 input됨-->
     <input type="submit" value="Add bookmark">
 </form>
 </body>
