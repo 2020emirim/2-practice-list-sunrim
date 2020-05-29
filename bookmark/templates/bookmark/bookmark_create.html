@@ -1,8 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Bookmark Add</title>
+{% extends 'base.html' %}
+
+{% block title %}Add{% endblock %}
+
+{% block content %}
 </head>
 <body>
 <form action="" method="post">
@@ -10,5 +10,5 @@
     {{ form.as_p }} <!--views에 fields에 넣어놨던 항목들이 자동으로 input됨-->
     <input type="submit" value="Add bookmark">
 </form>
-</body>
-</html>
+     <button onclick="history.back()">Cancel</button>
+{% endblock %}
